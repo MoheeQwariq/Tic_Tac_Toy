@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.board {
+  background: #ab146d;
+  background: linear-gradient(312deg, #ab146d 0%, #5f0fbe 100%);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.board .cell {
+  all: unset;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
+  font-size: 130px;
+  font-family: "Quicksand", "sans-serif";
+  font-weight: 600;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
+
+.board .cell.x {
+  text-shadow: 0 0 0px #ffffff, 0 0 15px #2a5fe0, 0 0 20px #2a5fe0,
+    0 0 25px #2a5fe0, 0 0 30px #2a5fe0, 0 0 35px #2a5fe0;
+}
+
+.board .cell.o {
+  text-shadow: 0 0 0px #ffffff, 0 0 15px #d7225a, 0 0 20px #d7225a,
+    0 0 25px #d7225a, 0 0 30px #d7225a, 0 0 35px #d7225a;
+}
